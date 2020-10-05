@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74153010-0b50-49ad-8f35-cb773c5de8a5" name="Default Changelist" comment="" />
+    <list default="true" id="74153010-0b50-49ad-8f35-cb773c5de8a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CacheReset.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CacheReset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CreatePermission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CreatePermission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CreateRole.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CreateRole.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/GuardDoesNotMatch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/GuardDoesNotMatch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/PermissionAlreadyExists.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/PermissionAlreadyExists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/PermissionDoesNotExist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/PermissionDoesNotExist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/RoleAlreadyExists.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/RoleAlreadyExists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/RoleDoesNotExist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/RoleDoesNotExist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/UnauthorizedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/UnauthorizedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/WildcardPermissionInvalidArgument.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/WildcardPermissionInvalidArgument.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/WildcardPermissionNotProperlyFormatted.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/WildcardPermissionNotProperlyFormatted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Guard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Middlewares/PermissionMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middlewares/PermissionMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Middlewares/RoleMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middlewares/RoleMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Middlewares/RoleOrPermissionMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middlewares/RoleOrPermissionMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PermissionRegistrar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PermissionRegistrar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PermissionServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PermissionServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/HasPermissions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/HasPermissions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/HasRoles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/HasRoles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/RefreshesPermissionCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/RefreshesPermissionCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WildcardPermission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WildcardPermission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +49,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -33,11 +64,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601869249882</updated>
-      <workItem from="1601869252703" duration="385000" />
+      <workItem from="1601869252703" duration="838000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="393" y="104" width="579" height="520" key="find.popup" timestamp="1601869896652">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="393" y="104" width="579" height="520" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1601869896652" />
   </component>
 </project>
