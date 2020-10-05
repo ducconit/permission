@@ -1,17 +1,17 @@
 <?php
 
-namespace Mung9thang12\Permission\Models;
+namespace Ducconit\Permission\Models;
 
-use Mung9thang12\Permission\Guard;
+use Ducconit\Permission\Guard;
 use Illuminate\Support\Collection;
-use Mung9thang12\Permission\Traits\HasRoles;
+use Ducconit\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Model;
-use Mung9thang12\Permission\PermissionRegistrar;
-use Mung9thang12\Permission\Traits\RefreshesPermissionCache;
-use Mung9thang12\Permission\Exceptions\PermissionDoesNotExist;
+use Ducconit\Permission\PermissionRegistrar;
+use Ducconit\Permission\Traits\RefreshesPermissionCache;
+use Ducconit\Permission\Exceptions\PermissionDoesNotExist;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Mung9thang12\Permission\Exceptions\PermissionAlreadyExists;
-use Mung9thang12\Permission\Contracts\Permission as PermissionContract;
+use Ducconit\Permission\Exceptions\PermissionAlreadyExists;
+use Ducconit\Permission\Contracts\Permission as PermissionContract;
 
 class Permission extends Model implements PermissionContract
 {
@@ -94,9 +94,9 @@ class Permission extends Model implements PermissionContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @throws \Mung9thang12\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\PermissionDoesNotExist
      *
-     * @return \Mung9thang12\Permission\Contracts\Permission
+     * @return \Ducconit\Permission\Contracts\Permission
      */
     public static function findByName(string $name, $guardName = null): PermissionContract
     {
@@ -115,9 +115,9 @@ class Permission extends Model implements PermissionContract
      * @param int $id
      * @param string|null $guardName
      *
-     * @throws \Mung9thang12\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\PermissionDoesNotExist
      *
-     * @return \Mung9thang12\Permission\Contracts\Permission
+     * @return \Ducconit\Permission\Contracts\Permission
      */
     public static function findById(int $id, $guardName = null): PermissionContract
     {
@@ -137,7 +137,7 @@ class Permission extends Model implements PermissionContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Permission
+     * @return \Ducconit\Permission\Contracts\Permission
      */
     public static function findOrCreate(string $name, $guardName = null): PermissionContract
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mung9thang12\Permission;
+namespace Ducconit\Permission;
 
 use Illuminate\Support\Collection;
-use Mung9thang12\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
+use Ducconit\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
 
 class WildcardPermission
 {

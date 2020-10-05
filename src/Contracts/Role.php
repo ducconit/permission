@@ -1,6 +1,6 @@
 <?php
 
-namespace Mung9thang12\Permission\Contracts;
+namespace Ducconit\Permission\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -19,9 +19,9 @@ interface Role
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Role
+     * @return \Ducconit\Permission\Contracts\Role
      *
-     * @throws \Mung9thang12\Permission\Exceptions\RoleDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\RoleDoesNotExist
      */
     public static function findByName(string $name, $guardName): self;
 
@@ -31,9 +31,9 @@ interface Role
      * @param int $id
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Role
+     * @return \Ducconit\Permission\Contracts\Role
      *
-     * @throws \Mung9thang12\Permission\Exceptions\RoleDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\RoleDoesNotExist
      */
     public static function findById(int $id, $guardName): self;
 
@@ -43,14 +43,14 @@ interface Role
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Role
+     * @return \Ducconit\Permission\Contracts\Role
      */
     public static function findOrCreate(string $name, $guardName): self;
 
     /**
      * Determine if the user may perform the given permission.
      *
-     * @param string|\Mung9thang12\Permission\Contracts\Permission $permission
+     * @param string|\Ducconit\Permission\Contracts\Permission $permission
      *
      * @return bool
      */

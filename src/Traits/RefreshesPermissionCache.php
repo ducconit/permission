@@ -1,8 +1,8 @@
 <?php
 
-namespace Mung9thang12\Permission\Traits;
+namespace Ducconit\Permission\Traits;
 
-use Mung9thang12\Permission\PermissionRegistrar;
+use Ducconit\Permission\PermissionRegistrar;
 
 trait RefreshesPermissionCache
 {

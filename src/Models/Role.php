@@ -1,15 +1,15 @@
 <?php
 
-namespace Mung9thang12\Permission\Models;
+namespace Ducconit\Permission\Models;
 
-use Mung9thang12\Permission\Guard;
+use Ducconit\Permission\Guard;
 use Illuminate\Database\Eloquent\Model;
-use Mung9thang12\Permission\Traits\HasPermissions;
-use Mung9thang12\Permission\Exceptions\RoleDoesNotExist;
-use Mung9thang12\Permission\Exceptions\GuardDoesNotMatch;
-use Mung9thang12\Permission\Exceptions\RoleAlreadyExists;
-use Mung9thang12\Permission\Contracts\Role as RoleContract;
-use Mung9thang12\Permission\Traits\RefreshesPermissionCache;
+use Ducconit\Permission\Traits\HasPermissions;
+use Ducconit\Permission\Exceptions\RoleDoesNotExist;
+use Ducconit\Permission\Exceptions\GuardDoesNotMatch;
+use Ducconit\Permission\Exceptions\RoleAlreadyExists;
+use Ducconit\Permission\Contracts\Role as RoleContract;
+use Ducconit\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Role extends Model implements RoleContract
@@ -75,9 +75,9 @@ class Role extends Model implements RoleContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Role|\Mung9thang12\Permission\Models\Role
+     * @return \Ducconit\Permission\Contracts\Role|\Ducconit\Permission\Models\Role
      *
-     * @throws \Mung9thang12\Permission\Exceptions\RoleDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\RoleDoesNotExist
      */
     public static function findByName(string $name, $guardName = null): RoleContract
     {
@@ -111,7 +111,7 @@ class Role extends Model implements RoleContract
      * @param string $name
      * @param string|null $guardName
      *
-     * @return \Mung9thang12\Permission\Contracts\Role
+     * @return \Ducconit\Permission\Contracts\Role
      */
     public static function findOrCreate(string $name, $guardName = null): RoleContract
     {
@@ -133,7 +133,7 @@ class Role extends Model implements RoleContract
      *
      * @return bool
      *
-     * @throws \Mung9thang12\Permission\Exceptions\GuardDoesNotMatch
+     * @throws \Ducconit\Permission\Exceptions\GuardDoesNotMatch
      */
     public function hasPermissionTo($permission): bool
     {

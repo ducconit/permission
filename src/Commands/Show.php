@@ -1,11 +1,11 @@
 <?php
 
-namespace Mung9thang12\Permission\Commands;
+namespace Ducconit\Permission\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-use Mung9thang12\Permission\Contracts\Role as RoleContract;
-use Mung9thang12\Permission\Contracts\Permission as PermissionContract;
+use Ducconit\Permission\Contracts\Role as RoleContract;
+use Ducconit\Permission\Contracts\Permission as PermissionContract;
 
 class Show extends Command
 {

@@ -1,16 +1,16 @@
 {
-    "name": "mung9thang12/permission",
+    "name": "ducconit/permission",
     "description": "laravel permission customize for spatie/laravel-permission",
     "type": "library",
     "authors": [
         {
-            "name": "mung9thang12",
-            "email": "mung9thang12@gmail.com"
+            "name": "Ngo Trung Duc",
+            "email": "ducconit@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Mung9thang12\\Permission\\":"src/"
+            "Ducconit\\Permission\\":"src/"
         }
     },
     "minimum-stability": "dev",
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mung9thang12\\Permission\\PermissionServiceProvider"
+                "Ducconit\\Permission\\PermissionServiceProvider"
             ]
         }
     }

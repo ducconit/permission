@@ -1,9 +1,9 @@
 <?php
 
-namespace Mung9thang12\Permission\Commands;
+namespace Ducconit\Permission\Commands;
 
 use Illuminate\Console\Command;
-use Mung9thang12\Permission\PermissionRegistrar;
+use Ducconit\Permission\PermissionRegistrar;
 
 class CacheReset extends Command
 {

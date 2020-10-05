@@ -1,10 +1,10 @@
 <?php
 
-namespace Mung9thang12\Permission\Middlewares;
+namespace Ducconit\Permission\Middlewares;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
-use Mung9thang12\Permission\Exceptions\UnauthorizedException;
+use Ducconit\Permission\Exceptions\UnauthorizedException;
 
 class RoleMiddleware
 {

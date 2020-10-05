@@ -1,6 +1,6 @@
 <?php
 
-namespace Mung9thang12\Permission\Contracts;
+namespace Ducconit\Permission\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -19,7 +19,7 @@ interface Permission
      * @param string $name
      * @param string|null $guardName
      *
-     * @throws \Mung9thang12\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\PermissionDoesNotExist
      *
      * @return Permission
      */
@@ -31,7 +31,7 @@ interface Permission
      * @param int $id
      * @param string|null $guardName
      *
-     * @throws \Mung9thang12\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \Ducconit\Permission\Exceptions\PermissionDoesNotExist
      *
      * @return Permission
      */

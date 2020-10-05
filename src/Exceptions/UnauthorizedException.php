@@ -1,6 +1,6 @@
 <?php
 
-namespace Mung9thang12\Permission\Exceptions;
+namespace Ducconit\Permission\Exceptions;
 
 use Symfony\Component\HttpKernel\Exception\HttpException;
 

@@ -10,10 +10,10 @@ return [
          * is often just the "Permission" model but you may use whatever you like.
          *
          * The model you want to use as a Permission model needs to implement the
-         * `Mung9thang12\Permission\Contracts\Permission` contract.
+         * `Ducconit\Permission\Contracts\Permission` contract.
          */
 
-        'permission' => Mung9thang12\Permission\Models\Permission::class,
+        'permission' => Ducconit\Permission\Models\Permission::class,
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -21,10 +21,10 @@ return [
          * is often just the "Role" model but you may use whatever you like.
          *
          * The model you want to use as a Role model needs to implement the
-         * `Mung9thang12\Permission\Contracts\Role` contract.
+         * `Ducconit\Permission\Contracts\Role` contract.
          */
 
-        'role' => Mung9thang12\Permission\Models\Role::class,
+        'role' => Ducconit\Permission\Models\Role::class,
 
     ],
 
@@ -127,7 +127,7 @@ return [
          * The cache key used to store all permissions.
          */
 
-        'key' => 'Mung9thang12.permission.cache',
+        'key' => 'Ducconit.permission.cache',
 
         /*
          * When checking for a permission against a model by passing a Permission

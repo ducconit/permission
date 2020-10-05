@@ -1,6 +1,6 @@
 <?php
 
-namespace Mung9thang12\Permission;
+namespace Ducconit\Permission;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application as LaravelApplication;
@@ -9,8 +9,8 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
 use Laravel\Lumen\Application as LumenApplication;
-use Mung9thang12\Permission\Contracts\Permission as PermissionContract;
-use Mung9thang12\Permission\Contracts\Role as RoleContract;
+use Ducconit\Permission\Contracts\Permission as PermissionContract;
+use Ducconit\Permission\Contracts\Role as RoleContract;
 
 class PermissionServiceProvider extends ServiceProvider
 {
@@ -79,14 +79,14 @@ class PermissionServiceProvider extends ServiceProvider
     protected function registerMiddleware()
     {
         if ($this->app instanceof LaravelApplication) {
-            app('router')->aliasMiddleware('role', \Mung9thang12\Permission\Middlewares\RoleMiddleware::class);
-            app('router')->aliasMiddleware('permission', \Mung9thang12\Permission\Middlewares\PermissionMiddleware::class);
-            app('router')->aliasMiddleware('roleorpermission', \Mung9thang12\Permission\Middlewares\RoleOrPermissionMiddleware::class);
+            app('router')->aliasMiddleware('role', \Ducconit\Permission\Middlewares\RoleMiddleware::class);
+            app('router')->aliasMiddleware('permission', \Ducconit\Permission\Middlewares\PermissionMiddleware::class);
+            app('router')->aliasMiddleware('roleorpermission', \Ducconit\Permission\Middlewares\RoleOrPermissionMiddleware::class);
         } elseif ($this->app instanceof LumenApplication) {
             $this->app->routeMiddleware([
-                'role' => \Mung9thang12\Permission\Middlewares\RoleMiddleware::class,
-                'permission'=> \Mung9thang12\Permission\Middlewares\PermissionMiddleware::class,
-                'roleorpermission'=> \Mung9thang12\Permission\Middlewares\RoleOrPermissionMiddleware::class
+                'role' => \Ducconit\Permission\Middlewares\RoleMiddleware::class,
+                'permission'=> \Ducconit\Permission\Middlewares\PermissionMiddleware::class,
+                'roleorpermission'=> \Ducconit\Permission\Middlewares\RoleOrPermissionMiddleware::class
             ]);
         }
     }

@@ -1,17 +1,17 @@
 <?php
 
-namespace Mung9thang12\Permission\Traits;
+namespace Ducconit\Permission\Traits;
 
-use Mung9thang12\Permission\Guard;
+use Ducconit\Permission\Guard;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
-use Mung9thang12\Permission\WildcardPermission;
-use Mung9thang12\Permission\PermissionRegistrar;
-use Mung9thang12\Permission\Contracts\Permission;
-use Mung9thang12\Permission\Exceptions\GuardDoesNotMatch;
-use Mung9thang12\Permission\Exceptions\PermissionDoesNotExist;
+use Ducconit\Permission\WildcardPermission;
+use Ducconit\Permission\PermissionRegistrar;
+use Ducconit\Permission\Contracts\Permission;
+use Ducconit\Permission\Exceptions\GuardDoesNotMatch;
+use Ducconit\Permission\Exceptions\PermissionDoesNotExist;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Mung9thang12\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use Ducconit\Permission\Exceptions\WildcardPermissionInvalidArgument;
 
 trait HasPermissions
 {
@@ -65,7 +65,7 @@ trait HasPermissions
      * Scope the model query to certain permissions only.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
-     * @param string|array|\Mung9thang12\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
+     * @param string|array|\Ducconit\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
@@ -90,7 +90,7 @@ trait HasPermissions
     }
 
     /**
-     * @param string|array|\Mung9thang12\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
+     * @param string|array|\Ducconit\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
      *
      * @return array
      */
@@ -114,7 +114,7 @@ trait HasPermissions
     /**
      * Determine if the model may perform the given permission.
      *
-     * @param string|int|\Mung9thang12\Permission\Contracts\Permission $permission
+     * @param string|int|\Ducconit\Permission\Contracts\Permission $permission
      * @param string|null $guardName
      *
      * @return bool
@@ -153,7 +153,7 @@ trait HasPermissions
     /**
      * Validates a wildcard permission against all permissions of a user.
      *
-     * @param string|int|\Mung9thang12\Permission\Contracts\Permission $permission
+     * @param string|int|\Ducconit\Permission\Contracts\Permission $permission
      * @param string|null $guardName
      *
      * @return bool
@@ -201,7 +201,7 @@ trait HasPermissions
     /**
      * An alias to hasPermissionTo(), but avoids throwing an exception.
      *
-     * @param string|int|\Mung9thang12\Permission\Contracts\Permission $permission
+     * @param string|int|\Ducconit\Permission\Contracts\Permission $permission
      * @param string|null $guardName
      *
      * @return bool
@@ -260,7 +260,7 @@ trait HasPermissions
     /**
      * Determine if the model has, via roles, the given permission.
      *
-     * @param \Mung9thang12\Permission\Contracts\Permission $permission
+     * @param \Ducconit\Permission\Contracts\Permission $permission
      *
      * @return bool
      */
@@ -272,7 +272,7 @@ trait HasPermissions
     /**
      * Determine if the model has the given permission.
      *
-     * @param string|int|\Mung9thang12\Permission\Contracts\Permission $permission
+     * @param string|int|\Ducconit\Permission\Contracts\Permission $permission
      *
      * @return bool
      * @throws PermissionDoesNotExist
@@ -343,7 +343,7 @@ trait HasPermissions
     /**
      * Grant the given permission(s) to a role.
      *
-     * @param string|array|\Mung9thang12\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
+     * @param string|array|\Ducconit\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ trait HasPermissions
     /**
      * Remove all current permissions and set the given ones.
      *
-     * @param string|array|\Mung9thang12\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
+     * @param string|array|\Ducconit\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
      *
      * @return $this
      */
@@ -459,7 +459,7 @@ trait HasPermissions
     /**
      * Revoke the given permission.
      *
-     * @param \Mung9thang12\Permission\Contracts\Permission|\Mung9thang12\Permission\Contracts\Permission[]|string|string[] $permission
+     * @param \Ducconit\Permission\Contracts\Permission|\Ducconit\Permission\Contracts\Permission[]|string|string[] $permission
      *
      * @return $this
      */
@@ -480,9 +480,9 @@ trait HasPermissions
     }
 
     /**
-     * @param string|array|\Mung9thang12\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
+     * @param string|array|\Ducconit\Permission\Contracts\Permission|\Illuminate\Support\Collection $permissions
      *
-     * @return \Mung9thang12\Permission\Contracts\Permission|\Mung9thang12\Permission\Contracts\Permission[]|\Illuminate\Support\Collection
+     * @return \Ducconit\Permission\Contracts\Permission|\Ducconit\Permission\Contracts\Permission[]|\Illuminate\Support\Collection
      */
     protected function getStoredPermission($permissions)
     {
@@ -507,9 +507,9 @@ trait HasPermissions
     }
 
     /**
-     * @param \Mung9thang12\Permission\Contracts\Permission|\Mung9thang12\Permission\Contracts\Role $roleOrPermission
+     * @param \Ducconit\Permission\Contracts\Permission|\Ducconit\Permission\Contracts\Role $roleOrPermission
      *
-     * @throws \Mung9thang12\Permission\Exceptions\GuardDoesNotMatch
+     * @throws \Ducconit\Permission\Exceptions\GuardDoesNotMatch
      */
     protected function ensureModelSharesGuard($roleOrPermission)
     {

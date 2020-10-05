@@ -1,9 +1,9 @@
 <?php
 
-namespace Mung9thang12\Permission\Commands;
+namespace Ducconit\Permission\Commands;
 
 use Illuminate\Console\Command;
-use Mung9thang12\Permission\Contracts\Permission as PermissionContract;
+use Ducconit\Permission\Contracts\Permission as PermissionContract;
 
 class CreatePermission extends Command
 {

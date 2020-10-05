@@ -1,6 +1,6 @@
 <?php
 
-namespace Mung9thang12\Permission;
+namespace Ducconit\Permission;
 
 use Illuminate\Support\Collection;
 

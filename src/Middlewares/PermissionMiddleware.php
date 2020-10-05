@@ -1,9 +1,9 @@
 <?php
 
-namespace Mung9thang12\Permission\Middlewares;
+namespace Ducconit\Permission\Middlewares;
 
 use Closure;
-use Mung9thang12\Permission\Exceptions\UnauthorizedException;
+use Ducconit\Permission\Exceptions\UnauthorizedException;
 
 class PermissionMiddleware
 {

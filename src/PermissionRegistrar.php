@@ -1,12 +1,12 @@
 <?php
 
-namespace Mung9thang12\Permission;
+namespace Ducconit\Permission;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;
-use Mung9thang12\Permission\Contracts\Role;
+use Ducconit\Permission\Contracts\Role;
 use Illuminate\Contracts\Auth\Access\Gate;
-use Mung9thang12\Permission\Contracts\Permission;
+use Ducconit\Permission\Contracts\Permission;
 use Illuminate\Contracts\Auth\Access\Authorizable;
 
 class PermissionRegistrar
@@ -143,7 +143,7 @@ class PermissionRegistrar
     /**
      * Get an instance of the permission class.
      *
-     * @return \Mung9thang12\Permission\Contracts\Permission
+     * @return \Ducconit\Permission\Contracts\Permission
      */
     public function getPermissionClass(): Permission
     {
@@ -160,7 +160,7 @@ class PermissionRegistrar
     /**
      * Get an instance of the role class.
      *
-     * @return \Mung9thang12\Permission\Contracts\Role
+     * @return \Ducconit\Permission\Contracts\Role
      */
     public function getRoleClass(): Role
     {
